@@ -1,0 +1,24 @@
+{
+  "name": "bar",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyhlg/release-note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyhlg/release-note/issues"
+  },
+  "homepage": "https://github.com/lyhlg/release-note#readme",
+  "devDependencies": {
+    "semantic-release": "^23.0.8",
+    "semantic-release-monorepo": "^8.0.2"
+  }
+}
