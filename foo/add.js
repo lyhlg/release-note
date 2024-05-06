@@ -1,6 +1,6 @@
 /**
  * 덧셈 함수 정의
- * @param args
+ * @param args 숫자들
  * @returns {*}
  * @constructor
  */
