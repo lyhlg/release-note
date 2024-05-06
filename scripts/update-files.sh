@@ -26,11 +26,21 @@ do
       echo "Unknown release type. Skipping version update."
     fi
 
-    # 폴더의 CHANGELOG.md 파일을 업데이트합니다.
+    # 폴더의 현재 버전을 가져옵니다.
+    VERSION=$(jq -r '.version' "$folder/package.json")
+
+    # 디렉토리-버전 형태의 태그를 생성합니다.
+    TAG="$folder-v$VERSION"
+
+    # 태그를 푸시합니다.
+    git tag "$TAG"
+    git push origin "$TAG"
+
+    # CHANGELOG.md 파일을 생성합니다.
     cd $folder
-#    npm run generate-changelog
     npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0
     cd ..
+
 
     # 변경된 파일을 Git에 추가합니다.
     git add "$folder/package.json" "$folder/CHANGELOG.md"
