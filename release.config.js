@@ -67,6 +67,12 @@ module.exports = {
 		"@semantic-release/commit-analyzer",
 		"@semantic-release/release-notes-generator",
 		[
+			'@semantic-release/exec',
+			{
+				prepareCmd: './scripts/update-files.sh',
+			},
+		],
+		[
 			"@semantic-release/npm",
 			{
 				"npmPublish": false

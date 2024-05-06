@@ -1,7 +1,7 @@
 /**
  * 덧셈 함수 정의
  * @param args 숫자들
- * @returns {*}
+ * @returns {*} 숫자
  * @constructor
  */
 function Add(...args) {
