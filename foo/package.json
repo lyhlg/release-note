@@ -1,6 +1,6 @@
 {
-  "name": "release-test",
-  "version": "1.0.0",
+  "name": "foo",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -16,12 +16,5 @@
   "bugs": {
     "url": "https://github.com/lyhlg/release-note/issues"
   },
-  "homepage": "https://github.com/lyhlg/release-note#readme",
-  "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/exec": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^8.0.0",
-    "semantic-release": "^23.0.8"
-  }
+  "homepage": "https://github.com/lyhlg/release-note#readme"
 }
